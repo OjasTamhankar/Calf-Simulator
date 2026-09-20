@@ -97,8 +97,8 @@ button:disabled {
 
 .control-console {
   position: relative;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
   width: 100%;
   min-height: 0;
@@ -203,9 +203,16 @@ h1 {
 }
 
 .tab-strip {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+  width: 100%;
+  background: rgba(248, 244, 235, 0.9);
+  backdrop-filter: blur(8px);
+  padding-top: 4px;
 }
 
 .tab {
