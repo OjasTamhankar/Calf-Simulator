@@ -205,14 +205,13 @@ h1 {
 .tab-strip {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 10;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
-  width: 100%;
-  background: rgba(248, 244, 235, 0.9);
-  backdrop-filter: blur(8px);
-  padding-top: 4px;
+  background: rgba(248, 244, 235, 0.82);
+  backdrop-filter: blur(4px);
+  padding-top: 2px;
 }
 
 .tab {
@@ -233,6 +232,7 @@ h1 {
 
 .content-shell {
   width: 100%;
+  flex: 1;
 }
 
 .control-panel {
